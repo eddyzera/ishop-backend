@@ -1,5 +1,6 @@
 import { application } from '@/application'
+import { env } from '@/env'
 
-application.listen(3001, () =>
-  console.log(`HTTP Request Server Running 🚀 port:${3001}`),
+application.listen(env.PORT, () =>
+  console.log(`HTTP Request Server Running 🚀 port:${env.PORT}`),
 )
